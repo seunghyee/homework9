@@ -175,7 +175,7 @@ void breadthFirstSearch(Graph* graph, int startVertex) {
         int currentVertex = dequeue(queue);
         printf("%d ", currentVertex);
 
-        // 정점의 인접 리스트를 오름차순으로 정렬
+        // 정점의 인접 리스트를 오름차순 정렬
         sortAdjList(&(graph->array[currentVertex]));
 
         AdjListNode* temp = graph->array[currentVertex].head;
